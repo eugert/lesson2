@@ -22,15 +22,15 @@ for one_class in school_scores:
     class_scores_cnt = 0
     for scores in one_class['scores']:
         # print(scores)
-        class_scores_sum = class_scores_sum + scores
-        class_scores_cnt = class_scores_cnt + 1 
+        class_scores_sum +=  scores
+        class_scores_cnt += 1 
         
     avg_scores['school_class'] = one_class['school_class']
     avg_scores['avg_scores'] = class_scores_sum / class_scores_cnt
-    print('Класс ' + avg_scores['school_class'] + ' - средняя оценка ' + str(avg_scores))
+    print('Класс ', avg_scores['school_class'], ' - средняя оценка ', avg_scores)
 
-    school_scores_sum = school_scores_sum + class_scores_sum
-    school_scores_cnt = school_scores_cnt + class_scores_cnt
+    school_scores_sum += class_scores_sum
+    school_scores_cnt += class_scores_cnt
 
 school_avg = school_scores_sum / school_scores_cnt
-print ('Средня оценка по школе ' + str(school_avg))
+print ('Средня оценка по школе ', school_avg)

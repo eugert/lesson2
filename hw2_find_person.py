@@ -7,7 +7,7 @@ def find_person(in_name):
     persons = ["Вася", "Маша", "Петя", "Валера", "Саша", "Даша"]
     answer = in_name+' тут нет'
 
-    while len(persons)>0:
+    while persons:
         if(persons.pop() == in_name):
             answer=in_name+' здесь!'    
     print(answer)

@@ -5,15 +5,17 @@
 
 age = int(input ('Введите возраст: '))
 
-if age <=6:
-    massege = 'Вы можете посещать детский сад'
+if age < 0:
+    raise 'Возраст не может быть отрицательным' 
+elif age <=6:
+    messege = 'Вы можете посещать детский сад'
 elif  age <=16:
-    massege = 'Вы учитесь в школе'
+    messege = 'Вы учитесь в школе'
 elif  age <=23:
-    massege = 'Вы вероятно учитесь в ВУЗе'
+    messege = 'Вы вероятно учитесь в ВУЗе'
 elif  age <=65:
-    massege = 'Вы работаете'
+    messege = 'Вы работаете'
 else: 
-    massege = 'Вы можете выйти на песнию'
+    messege = 'Вы можете выйти на песнию'
 
-print (massege)
+print (messege)
