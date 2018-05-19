@@ -47,7 +47,7 @@ def talk_about_planet(bot, update):
         place=ephem.constellation(ephem.Mars(datetime.datetime.now()))
     elif planet=='Venus':
         place=ephem.constellation(ephem.Venus(datetime.datetime.now()))
-    elif planet=='Vupiter':
+    elif planet=='Jupiter':
         place=ephem.constellation(ephem.Jupiter(datetime.datetime.now()))
     elif planet=='Uranus':
         place=ephem.constellation(ephem.Uranus(datetime.datetime.now()))
